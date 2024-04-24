@@ -1,5 +1,4 @@
 import streamlit as st
-from pentominoes import ALL_PARTS
 from polymino import Grid,generate_polyminoes,generate_polymino_positions,unique_grids
 from dlx import DLX
 from hexa_rotation_flip import P1,P2,P3,P4,P5,P6,P7,P8
