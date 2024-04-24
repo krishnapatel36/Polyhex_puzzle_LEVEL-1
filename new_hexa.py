@@ -6,7 +6,7 @@ from itertools import product
 from svgwrite import Drawing,text
 import numpy as np  
 
-st.title("Shatkon Paheli")
+st.title("षट्कोण पहेलि")
 
 def solutions_svg(solutions, filename, columns=1, size=5, padding=10,
                   colour=lambda _: "white",stroke_colour="black",
