@@ -58,22 +58,22 @@ def solutions_svg(solutions, filename, columns=1, size=5, padding=10,
                 piece.add(drawing.polygon(points))
 
 
-        # put in "empty" pieces
-        num=1
-        for i, j in solution.coord:
-            if grid[i][j] == empty:
-                x_coord = j * (1.69 * size) + oj + ((i + (j % 8) / 8) * size)
-                y_coord = i * (np.sqrt(2.2) * size) + oi
-                if number==num:
-                    text_element = text.Text(num+1, insert=(x_coord,y_coord), fill='black', font_size=3)
-                    num+=2
-                else:
-                    text_element = text.Text(num, insert=(x_coord,y_coord), fill='black', font_size=3)
-                    num+=1
-                drawing.add(text_element)
+        # # put in "empty" pieces
+        # num=1
+        # for i, j in solution.coord:
+        #     if grid[i][j] == empty:
+        #         x_coord = j * (1.69 * size) + oj + ((i + (j % 8) / 8) * size)
+        #         y_coord = i * (np.sqrt(2.2) * size) + oi
+        #         if number==num:
+        #             text_element = text.Text(num+1, insert=(x_coord,y_coord), fill='black', font_size=3)
+        #             num+=2
+        #         else:
+        #             text_element = text.Text(num, insert=(x_coord,y_coord), fill='black', font_size=3)
+        #             num+=1
+        #         drawing.add(text_element)
 
-        edges = drawing.path(stroke_width=stroke_width)
-        group.add(edges)
+        # edges = drawing.path(stroke_width=stroke_width)
+        # group.add(edges)
         for i, j in product(range(height + 1), range(width)):
             if ((empty if i == 0 else grid[i-1][j])
                 != (empty if i == height else grid[i][j])):
