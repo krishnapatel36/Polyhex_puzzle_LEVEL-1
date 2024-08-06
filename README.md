@@ -19,3 +19,5 @@ The output will be a solution to the polyhex puzzle, showing the arrangement of 
 Visualization:
 
 Depending on the script, you might get a visual representation of the puzzle solution or logs detailing the steps taken to solve the puzzle.
+
+SOFTWARE LINK - https://shatkon-paheli.streamlit.app/
